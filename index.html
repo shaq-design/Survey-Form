@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<h1 id="title">Survey Form</h1>
+<div class="container">
+<h3 id="description">
+   Please fill in the information
+  </h3>
+  <div id="form-outer">
+  
+<form id="survey-form" method="GET">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" required placeholder="Age">
+      </div>
+    </div>  
+    <div class="rowTab">
+      <div class="labels">
+        <label for="gender-type"> Gender</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="gender-type" class="dropdown">
+      <option disabled value>Choose your Gender</option>
+      <option value="Female">Female</option>
+  <option value="Male">Male</option>
+   </select><br> 
+  </div>
+      <div class="labels">
+        <label for="devices">Which of the following devices do you currently own?<br>(Check all that apply): </label>
+      </div>
+  <div class="rightTab">
+        <ul id="devices" style="list-style: none;">
+          <li class="checkbox"><label><input name="device" value="1" type="checkbox" class="userRatings">Computer (Desktop/Laptop)</label></li>
+          <li class="checkbox"><input name="device" value="2" type="checkbox" class="userRatings">Internet-enabled mobile device (e.g., smartphone, tablet, etc.)</li>
+          <li class="checkbox"><label><input name="device" value="3" type="checkbox" class="userRatings">Dedicated e-book Device (e.g., Kindle, Nook, Sony Reader, etc.)</label></li>
+          <li class="checkbox"><label><input name="device" value="4" type="checkbox" class="userRatings">Digital Camera</label></li>
+          <li class="checkbox"><label><input name="device" value="5" type="checkbox" class="userRatings">Wifi-enabled Printer</label></li>
+          <li class="checkbox"><label><input name="device" value="6" type="checkbox" class="userRatings">MP3 Player</label></li>
+          <li class="checkbox"><label><input name="device" value="7" type="checkbox" class="userRatings">None of the Above</label></li>
+          <li class="checkbox"><label><input name="device" value="8" type="checkbox" class="userRatings">Other<input id="other" type="text" name="" value="" ><br> </label></li>
+        </ul>
+      </div>
+    </div>
+      <div class="labels">
+        <label for="userMobile">* What brand of Mobile Phone do you own?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Apple<input name="radio-buttons" value="1"  type="radio" class="userMobile" ></label></li>
+          <li class="radio"><label>Samsung<input name="radio-buttons" value="2"  type="radio" class="userMobile" ></label></li>
+          <li class="radio"><label>LG<input name="radio-buttons" value="3"  type="radio" class="userMobile" ></label></li>
+          <li class="radio"><label>Sony Ericsson<input name="radio-buttons" value="3"  type="radio" class="userMobile" ></label></li>
+          <li class="radio"><label>Other<input name="radio-buttons" value="3"  type="radio" class="userMobile" > <input id="other" type="text" name="" value="" ><br> </label></li>
+        </ul>
+  </div>
+     
+      <div class="labels">
+        <label for="usernewMobile">* Would you be open to buying a brand that it totally new to the market?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Yes<input name="radio-buttons" value="1"  type="radio" class="usernewMobile" ></label></li>
+          <li class="radio"><label>No<input name="radio-buttons" value="2"  type="radio" class="usernewMobile" ></label></li>
+          <li class="radio"><label>Not Sure<input name="radio-buttons" value="3"  type="radio" class="usernewMobile" ></label></li>
+   </label></li>
+     </ul>
+</div>
+      <div class="labels">
+        <label for="comments">Any Comments or Suggestions?</label>
+      </div>
+    <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your comment here..."></textarea>
+      </div>
+    </div>
+   <div align="center">
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
